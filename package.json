@@ -1,7 +1,16 @@
 {
-  "name": "@musistudio/claude-code-router",
-  "version": "2.0.0",
+  "name": "@kosukework/claude-code-router-fix",
+  "version": "2.0.1",
   "description": "Use Claude Code without an Anthropics account and route it to another LLM provider",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "README_zh.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "pnpm build:shared && pnpm build:core && pnpm build:server && pnpm build:cli && pnpm build:ui",
     "build:core": "pnpm --filter @musistudio/llms build",
